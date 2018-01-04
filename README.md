@@ -1,3 +1,3 @@
-# exal
+# Wolcome to Exal!
 
 ## Documentation
