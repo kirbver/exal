@@ -41,6 +41,7 @@ define(function (require, exports, module) {
     require("thirdparty/CodeMirror/keymap/sublime");
 
     var CodeMirror = require("thirdparty/CodeMirror/lib/codemirror");
+    var Mustache = require("thirdparty/mustache/mustache");
 
     let div = document.createElement("div");
     div.id = "code-container";
@@ -48,12 +49,13 @@ define(function (require, exports, module) {
     text.id = "code";
     div.appendChild(text);
     document.body.appendChild(div);
-    text.style.display = "block";
 
     require(["thirdparty/CodeMirror/lib/codemirror", "thirdparty/CodeMirror/mode/htmlmixed/htmlmixed"], function(CodeMirror) {
         CodeMirror.fromTextArea(document.getElementById("code"), {
             lineNumbers: true,
-            mode: "htmlmixed"
+            mode: "javascript",
+            styleActiveLine: true,
+            theme: "pastel-on-dark"
         });
     });
 });
