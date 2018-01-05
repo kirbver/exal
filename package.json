@@ -43,15 +43,13 @@
     },
     "win": {
       "target": "NSIS",
-      "icon": "build/win.ico"
+      "icon": "build/windows.ico"
     }
   },
   "devDependencies": {
     "electron": "^1.8.1",
     "electron-builder": "^19.53.0",
-    "jquery": "^3.2.1"
-  },
-  "dependencies": {
+    "jquery": "^3.2.1",
     "mustache": "^2.3.0"
   }
 }

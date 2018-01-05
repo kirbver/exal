@@ -17,5 +17,5 @@ linux:
     - deb
 win:
   target: NSIS
-  icon: build/win.ico
+  icon: build/windows.ico
 electronVersion: 1.8.1
