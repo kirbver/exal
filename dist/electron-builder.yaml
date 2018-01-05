@@ -1,0 +1,21 @@
+directories:
+  output: dist
+  buildResources: build
+appId: exal-v1
+asar: true
+dmg:
+  contents:
+    - x: 240
+      'y': 150
+    - x: 240
+      'y': 150
+      type: link
+      path: /Applications
+linux:
+  target:
+    - AppImage
+    - deb
+win:
+  target: NSIS
+  icon: build/win.ico
+electronVersion: 1.8.1

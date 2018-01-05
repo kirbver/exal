@@ -4,13 +4,50 @@
   "description": "An open source code editor for the web, written in JavaScript, HTML and CSS.",
   "main": "index.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "pack": "build --dir",
+    "dist": "build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kirbver/exal.git"
   },
   "author": "kirbver",
-  "license": "ISC",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kirbver/exal/issues"
+  },
+  "homepage": "https://github.com/kirbver/exal#readme",
+  "build": {
+    "appId": "exal-v1",
+    "asar": true,
+    "dmg": {
+      "contents": [
+        {
+          "x": 240,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/win.ico"
+    }
+  },
   "devDependencies": {
-    "electron": "^1.7.10",
-    "electron-builder": "^19.52.1"
+    "electron": "^1.8.1",
+    "electron-builder": "^19.53.0"
   }
 }
