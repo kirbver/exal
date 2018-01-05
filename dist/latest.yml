@@ -1,9 +1,9 @@
 version: 1.0.0
 files:
   - url: exal-setup-1.0.0.exe
-    sha512: b/enpePOc38ssZSmFiMluxpDvI4MPEXZcOdKnAjlUKTtX8M1bSWzgbd4jXNgcLLLo6w0Vgr3kL3sLivISRIuGg==
-    size: 37151060
+    sha512: FOGtix1zxK4hMjDiuuJD1Qihwdpcbp4fOxqVve23v+XvRuUA7BkWC5sZxJqFJLUzVxDPxn3v10mItDG/46oklA==
+    size: 37149457
 path: exal-setup-1.0.0.exe
-sha512: b/enpePOc38ssZSmFiMluxpDvI4MPEXZcOdKnAjlUKTtX8M1bSWzgbd4jXNgcLLLo6w0Vgr3kL3sLivISRIuGg==
-sha2: 43e138fc6d580a798c9a3ef1e122f6321ad95a5865caff5b7541896934d587a6
-releaseDate: '2018-01-05T11:44:37.761Z'
+sha512: FOGtix1zxK4hMjDiuuJD1Qihwdpcbp4fOxqVve23v+XvRuUA7BkWC5sZxJqFJLUzVxDPxn3v10mItDG/46oklA==
+sha2: 06d83817cec779f9116a3272288eaf4397be63953dac41e5231017f7a183a707
+releaseDate: '2018-01-05T12:30:29.778Z'
