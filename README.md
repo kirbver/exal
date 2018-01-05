@@ -3,3 +3,7 @@ An open source code editor for the web, written in JavaScript, HTML and CSS. Mad
 
 ## How to contribute?
 To help with the development of Exal, follow the steps of [how to contribute](https://github.com/kirbver/exal/wiki/How-to-contribute%3F).
+
+
+## Download beta
+If you want to download the beta version, you can do it [here]()
