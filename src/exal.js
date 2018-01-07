@@ -55,7 +55,7 @@ define(function (require, exports, module) {
             lineNumbers: true,
             mode: "javascript",
             styleActiveLine: true,
-            theme: "pastel-on-dark"
+            theme: "tomorrow-night-eighties"
         });
     });
 });
