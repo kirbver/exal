@@ -1,4 +1,5 @@
 # **Wolcome to Exal!**
+(1.2.9)
 An open source code editor for the web, written in JavaScript, HTML and CSS. Made with JavaScript, and best of all is that it is open source, and everyone can contribute to its development. At the moment Exal is in development when it is ready you can download it.
 
 ## How to contribute?
