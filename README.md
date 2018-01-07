@@ -6,4 +6,4 @@ To help with the development of Exal, follow the steps of [how to contribute](ht
 
 
 ## Download beta
-If you want to download the beta version, you can do it [here](https://github.com/kirbver/exal/raw/master/dist/exal%20Setup%201.0.0.exe)
+If you want to download the beta version, you can do it [here](https://github.com/kirbver/exal/blob/master/dist/exal%20Setup.exe?raw=true)
