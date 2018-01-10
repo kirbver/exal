@@ -4,13 +4,21 @@ var hasToString = (function () {
     var test = 'hello world';
 }).toString().indexOf('hello world') !== -1;
 
+
 doh.registerUrl("simple", "../simple.html");
+
+doh.registerUrl("setTimeout", "../setTimeout.html");
 
 //PS3 does not like this test
 doh.registerUrl("baseUrl", "../baseUrl.html");
 
 doh.registerUrl("toUrl", "../toUrl/toUrl.html");
 doh.registerUrl("urlArgsToUrl", "../urlArgsToUrl.html");
+doh.registerUrl("urlArgsToUrlFunction", "../urlArgsToUrlFunction.html");
+
+if (typeof Blob === 'function') {
+    doh.registerUrl("urlArgsBlob", "../urlArgsBlob.html");
+}
 
 doh.registerUrl("config", "../config.html");
 doh.registerUrl("configRequirejs", "../configRequirejs.html");
@@ -18,6 +26,7 @@ doh.registerUrl("dataMain", "../dataMain/dataMain.html");
 doh.registerUrl("skipDataMain", "../dataMain/skipDataMain/skipDataMain.html");
 doh.registerUrl("dataMainIndex", "../dataMain/dataMainIndex/dataMainIndex.html");
 doh.registerUrl("dataMainBaseUrl", "../dataMain/baseUrl/dataMainBaseUrl.html");
+doh.registerUrl("dataMainPlugin", "../dataMain/dataMainPlugin/dataMainPlugin.html");
 
 doh.registerUrl("moduleExports", "../moduleExports/moduleExports.html");
 
@@ -25,8 +34,11 @@ if (hasToString) {
     doh.registerUrl("anonSimple", "../anon/anonSimple.html");
     doh.registerUrl("cjsSpace", "../cjsSpace/cjsSpace.html");
     doh.registerUrl("cjsDotRequire", "../cjsSpace/cjsDotRequire.html");
+    doh.registerUrl("commentParen", "../commentParen/commentParen.html");
     doh.registerUrl("packages", "../packages/packages.html");
     doh.registerUrl("packagesConfig", "../packages/config/config.html");
+    doh.registerUrl("packagesMultiLevel", "../packagesMultiLevel/packagesMultiLevel.html");
+    doh.registerUrl("packagesMultiLevelBuilt", "../packagesMultiLevel/packagesMultiLevel-built.html");
     doh.registerUrl("packagesNestedMain", "../packagesNestedMain/packagesNestedMain.html");
     doh.registerUrl("packagesNode", "../packagesNode/packagesNode.html");
     doh.registerUrl("packagesNodeAdapter", "../packagesNodeAdapter/packagesNodeAdapter.html");
@@ -52,6 +64,7 @@ doh.registerUrl("circularTranspiler", "../circular/transpiler/transpiler.html");
 
 doh.registerUrl("nestedRequire", "../nestedRequire/nestedRequire.html");
 
+doh.registerUrl("unorderedDefine", "../unorderedDefine/unorderedDefine.html");
 doh.registerUrl("depEmpty", "../depEmpty.html");
 doh.registerUrl("depoverlap", "../depoverlap.html");
 doh.registerUrl("urlfetch", "../urlfetch/urlfetch.html");
@@ -101,6 +114,7 @@ doh.registerUrl("mapConfigRelative", "../mapConfig/mapConfigRelative.html");
 doh.registerUrl("mapConfigSpecificity", "../mapConfig/mapConfigSpecificity.html");
 doh.registerUrl("mapConfigPlugin", "../mapConfig/mapConfigPlugin.html");
 doh.registerUrl("mapConfigPluginBuilt", "../mapConfig/built/mapConfigPluginBuilt.html");
+doh.registerUrl("secondLateConfigPlugin", "../secondLateConfigPlugin/secondLateConfigPlugin.html");
 
 doh.registerUrl("layers", "../layers/layers.html", 10000);
 
@@ -126,6 +140,8 @@ doh.registerUrl("pluginsSync", "../plugins/sync.html");
 doh.registerUrl("pluginsOnError", "../plugins/onerror/onerror.html");
 doh.registerUrl("doublePluginCall", "../plugins/double.html");
 doh.registerUrl("pluginsNameOnly", "../plugins/nameOnly.html");
+doh.registerUrl("pluginNormalize", "../pluginNormalize/pluginNormalize.html");
+doh.registerUrl("pluginNormalizeLoad", "../pluginNormalizeLoad/pluginNormalizeLoad.html");
 doh.registerUrl("pluginsDelegated", "../plugins/delegated/delegated.html");
 doh.registerUrl("pluginsFromText", "../plugins/fromText/fromText.html");
 doh.registerUrl("pluginsFromTextEvalError", "../plugins/fromTextEvalError/fromTextEvalError.html");
@@ -193,6 +209,8 @@ doh.registerUrl("errorGlobalOnError", "../error/globalOnError.html", 2000);
 doh.registerUrl("pluginErrorContinue", "../error/pluginErrorContinue.html", 8000);
 doh.registerUrl("pluginErrorContinueLocal", "../error/pluginErrorContinueLocal.html", 8000);
 doh.registerUrl("defineErrorLocal", "../error/defineErrorLocal.html");
+doh.registerUrl("errorChild", "../error/errorChild.html");
+
 
 doh.registerUrl("pathArray", "../pathArray/pathArray.html", 8000);
 doh.registerUrl("pathArrayWithMap", "../pathArray/withMap/withMap.html", 8000);

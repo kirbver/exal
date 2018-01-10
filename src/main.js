@@ -1,6 +1,6 @@
 
 /*
-  Copyright (c) 2012 - present Azebac Incorporated. All rights reserved.
+  Copyright (c) 2012 - present Exal Incorporated. All rights reserved.
 
   Permission is hereby granted, free of charge, to any person obtaining a
   copy of this software and associated documentation files (the "Software"),
@@ -21,6 +21,13 @@
   DEALINGS IN THE SOFTWARE.
 */
 
+requirejs.config({
+    paths: {
+        "text": "thirdparty/text/text"
+    }
+});
 define(function (require) {
-    requirejs(['exal']);
+    "use strict";
+
+    requirejs(["exal"]);
 });

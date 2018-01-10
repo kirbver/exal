@@ -22,7 +22,7 @@
 */
 
 define(function (require, exports, module) {
-    "use-strict";
+    "use strict";
 
     // Load CodeMirror add-ons--these attach themselves to the CodeMirror module
     require("thirdparty/CodeMirror/addon/edit/closebrackets");
@@ -40,22 +40,25 @@ define(function (require, exports, module) {
     require("thirdparty/CodeMirror/addon/selection/mark-selection");
     require("thirdparty/CodeMirror/keymap/sublime");
 
+    var MainViewHTML = require("text!htmlContent/main-view.html");
+
     var CodeMirror = require("thirdparty/CodeMirror/lib/codemirror");
     var Mustache = require("thirdparty/mustache/mustache");
 
-    let div = document.createElement("div");
-    div.id = "code-container";
-    let text = document.createElement("textarea");
-    text.id = "code";
-    div.appendChild(text);
-    document.body.appendChild(div);
+    var html = Mustache.to_html(MainViewHTML);
+    $('body').html(html);
 
     require(["thirdparty/CodeMirror/lib/codemirror", "thirdparty/CodeMirror/mode/htmlmixed/htmlmixed"], function(CodeMirror) {
         CodeMirror.fromTextArea(document.getElementById("code"), {
             lineNumbers: true,
-            mode: "javascript",
+            mode: "htmlmixed",
             styleActiveLine: true,
-            theme: "tomorrow-night-eighties"
+            theme: "one-dark",
+            matchBrackets: true,
+            autoCloseBrackets: true,
+            matchTags: true,
+            autoCloseTags: true,
+            tabSize: 4
         });
     });
 });
